@@ -4,9 +4,6 @@ import copy
 
 class Minimax:
 
-    # I think that we are crashing because in scenarios where the game is simulated out
-    # and the AI or black looses - then there are technically no moves left.
-    # We need to set the value of this board to either inf or -inf
     def minimax_value(self, model, depth, alpha, beta):
 
         if depth == 0:
