@@ -1,0 +1,9 @@
+WHITE = (255, 255, 255)
+BLACK = (0, 0, 0)
+
+ROWS = 8
+COLS = 8
+
+BOARD_DIM = 600
+
+BLANK = '⬜'
