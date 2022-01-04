@@ -6,15 +6,8 @@ from CheckersView.textView import TextView
 from CheckersController.checkersController import CheckersController
 import argparse
 
-""" What is next to Build Out:
-1. Tighten up logic of turns - Currently we switch turns if a normal move is made
-but not if a capture move is made - that is because you keep moving after a capture move
-if you can continue to capture. We need to check to see if there is another capture possible
-if so - do not change turns - make another move w the same piece. (Need to check if it is just double
-jumps or jump then move (rule))
-
-3. Implement win condition checking. Probably when either pieces are = 0.
-"""
+"""Main file handles argument parsing and building the respective model, view, controller pair based
+on arguments. Also handles repeated running of the constructed game for a multiple game 'simulation'"""
 
 
 def main(play_type, model, view, games=100):
